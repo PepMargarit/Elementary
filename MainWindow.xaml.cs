@@ -20,6 +20,7 @@ namespace Elementary
         private string _learningModeText;
         private string _startQuizText;
         private string _clickInfoText;
+        private string _leyendaText;
         private bool _isEnglish=false;
         private Element element = null;
 
@@ -72,7 +73,7 @@ namespace Elementary
         {
             LearningModeText = "Modo Aprendizaje";
             StartQuizText = "Iniciar Quiz";
-            ClickInfoText = "Clica en el elemento para información";
+            ClickInfoText = "Clica en el elemento para información";            
             Leyenda = "Leyenda";
             isEnglish = false;
             CategoryToColorConverter.LoadColorsFromJson("Data/colors_es.json");
@@ -122,8 +123,8 @@ namespace Elementary
 
         public string Leyenda
         {
-            get => _clickInfoText;
-            set { _clickInfoText = value; OnPropertyChanged(); }
+            get => _leyendaText;
+            set { _leyendaText = value; OnPropertyChanged(); }
         }
 
         public string Categoria
