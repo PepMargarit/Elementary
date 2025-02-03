@@ -1,0 +1,474 @@
+﻿[
+  {
+    "Name": "Hydrogen",
+    "Category": "Nonmetal"
+  },
+  {
+    "Name": "Helium",
+    "Category": "Noble Gas"
+  },
+  {
+    "Name": "Lithium",
+    "Category": "Alkali Metal"
+  },
+  {
+    "Name": "Beryllium",
+    "Category": "Alkaline Earth Metal"
+  },
+  {
+    "Name": "Boron",
+    "Category": "Metalloid"
+  },
+  {
+    "Name": "Carbon",
+    "Category": "Nonmetal"
+  },
+  {
+    "Name": "Nitrogen",
+    "Category": "Nonmetal"
+  },
+  {
+    "Name": "Oxygen",
+    "Category": "Nonmetal"
+  },
+  {
+    "Name": "Fluorine",
+    "Category": "Halogen"
+  },
+  {
+    "Name": "Neon",
+    "Category": "Noble Gas"
+  },
+  {
+    "Name": "Sodium",
+    "Category": "Alkali Metal"
+  },
+  {
+    "Name": "Magnesium",
+    "Category": "Alkaline Earth Metal"
+  },
+  {
+    "Name": "Aluminium",
+    "Category": "Post-transition Metal"
+  },
+  {
+    "Name": "Silicon",
+    "Category": "Metalloid"
+  },
+  {
+    "Name": "Phosphorus",
+    "Category": "Nonmetal"
+  },
+  {
+    "Name": "Sulfur",
+    "Category": "Nonmetal"
+  },
+  {
+    "Name": "Chlorine",
+    "Category": "Halogen"
+  },
+  {
+    "Name": "Argon",
+    "Category": "Noble Gas"
+  },
+  {
+    "Name": "Potassium",
+    "Category": "Alkali Metal"
+  },
+  {
+    "Name": "Calcium",
+    "Category": "Alkaline Earth Metal"
+  },
+  {
+    "Name": "Scandium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Titanium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Vanadium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Chromium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Manganese",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Iron",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Cobalt",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Nickel",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Copper",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Zinc",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Gallium",
+    "Category": "Post-transition Metal"
+  },
+  {
+    "Name": "Germanium",
+    "Category": "Metalloid"
+  },
+  {
+    "Name": "Arsenic",
+    "Category": "Metalloid"
+  },
+  {
+    "Name": "Selenium",
+    "Category": "Nonmetal"
+  },
+  {
+    "Name": "Bromine",
+    "Category": "Halogen"
+  },
+  {
+    "Name": "Krypton",
+    "Category": "Noble Gas"
+  },
+  {
+    "Name": "Rubidium",
+    "Category": "Alkali Metal"
+  },
+  {
+    "Name": "Strontium",
+    "Category": "Alkaline Earth Metal"
+  },
+  {
+    "Name": "Yttrium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Zirconium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Niobium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Molybdenum",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Technetium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Ruthenium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Rhodium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Palladium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Silver",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Cadmium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Indium",
+    "Category": "Post-transition Metal"
+  },
+  {
+    "Name": "Tin",
+    "Category": "Post-transition Metal"
+  },
+  {
+    "Name": "Antimony",
+    "Category": "Metalloid"
+  },
+  {
+    "Name": "Tellurium",
+    "Category": "Metalloid"
+  },
+  {
+    "Name": "Iodine",
+    "Category": "Halogen"
+  },
+  {
+    "Name": "Xenon",
+    "Category": "Noble Gas"
+  },
+  {
+    "Name": "Cesium",
+    "Category": "Alkali Metal"
+  },
+  {
+    "Name": "Barium",
+    "Category": "Alkaline Earth Metal"
+  },
+  {
+    "Name": "Lutetium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Hafnium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Tantalum",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Tungsten",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Rhenium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Osmium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Iridium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Platinum",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Gold",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Mercury",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Thallium",
+    "Category": "Post-transition Metal"
+  },
+  {
+    "Name": "Lead",
+    "Category": "Post-transition Metal"
+  },
+  {
+    "Name": "Bismuth",
+    "Category": "Post-transition Metal"
+  },
+  {
+    "Name": "Polonium",
+    "Category": "Metalloid"
+  },
+  {
+    "Name": "Astatine",
+    "Category": "Halogen"
+  },
+  {
+    "Name": "Radon",
+    "Category": "Noble Gas"
+  },
+  {
+    "Name": "Francium",
+    "Category": "Alkali Metal"
+  },
+  {
+    "Name": "Radium",
+    "Category": "Alkaline Earth Metal"
+  },
+  {
+    "Name": "Lawrencium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Rutherfordium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Dubnium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Seaborgium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Bohrium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Hassium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Meitnerium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Darmstadtium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Roentgenium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Copernicium",
+    "Category": "Transition Metal"
+  },
+  {
+    "Name": "Nihonium",
+    "Category": "Post-transition Metal"
+  },
+  {
+    "Name": "Flerovium",
+    "Category": "Post-transition Metal"
+  },
+  {
+    "Name": "Moscovium",
+    "Category": "Post-transition Metal"
+  },
+  {
+    "Name": "Livermorium",
+    "Category": "Post-transition Metal"
+  },
+  {
+    "Name": "Tennessine",
+    "Category": "Halogen"
+  },
+  {
+    "Name": "Oganesson",
+    "Category": "Noble Gas"
+  },
+  {
+    "Name": "Lanthanum",
+    "Category": "Lanthanide"
+  },
+  {
+    "Name": "Cerium",
+    "Category": "Lanthanide"
+  },
+  {
+    "Name": "Praseodymium",
+    "Category": "Lanthanide"
+  },
+  {
+    "Name": "Neodymium",
+    "Category": "Lanthanide"
+  },
+  {
+    "Name": "Promethium",
+    "Category": "Lanthanide"
+  },
+  {
+    "Name": "Samarium",
+    "Category": "Lanthanide"
+  },
+  {
+    "Name": "Europium",
+    "Category": "Lanthanide"
+  },
+  {
+    "Name": "Gadolinium",
+    "Category": "Lanthanide"
+  },
+  {
+    "Name": "Terbium",
+    "Category": "Lanthanide"
+  },
+  {
+    "Name": "Dysprosium",
+    "Category": "Lanthanide"
+  },
+  {
+    "Name": "Holmium",
+    "Category": "Lanthanide"
+  },
+  {
+    "Name": "Erbium",
+    "Category": "Lanthanide"
+  },
+  {
+    "Name": "Thulium",
+    "Category": "Lanthanide"
+  },
+  {
+    "Name": "Ytterbium",
+    "Category": "Lanthanide"
+  },
+  {
+    "Name": "Actinium",
+    "Category": "Actinide"
+  },
+  {
+    "Name": "Thorium",
+    "Category": "Actinide"
+  },
+  {
+    "Name": "Protactinium",
+    "Category": "Actinide"
+  },
+  {
+    "Name": "Uranium",
+    "Category": "Actinide"
+  },
+  {
+    "Name": "Neptunium",
+    "Category": "Actinide"
+  },
+  {
+    "Name": "Plutonium",
+    "Category": "Actinide"
+  },
+  {
+    "Name": "Americium",
+    "Category": "Actinide"
+  },
+  {
+    "Name": "Curium",
+    "Category": "Actinide"
+  },
+  {
+    "Name": "Berkelium",
+    "Category": "Actinide"
+  },
+  {
+    "Name": "Californium",
+    "Category": "Actinide"
+  },
+  {
+    "Name": "Einsteinium",
+    "Category": "Actinide"
+  },
+  {
+    "Name": "Fermium",
+    "Category": "Actinide"
+  },
+  {
+    "Name": "Mendelevium",
+    "Category": "Actinide"
+  },
+  {
+    "Name": "Nobelium",
+    "Category": "Actinide"
+  }
+]

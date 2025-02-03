@@ -7,7 +7,7 @@
         <local:CategoryToColorConverter x:Key="CategoryToColorConverter"/>
     </UserControl.Resources>
     <Border BorderBrush="Black" BorderThickness="1" Padding="1" Margin="1" 
-            Background="{Binding Category, Converter={StaticResource CategoryToColorConverter}}">
+            Background="{Binding CategoryColor}">
         <Grid>
             <Grid.RowDefinitions>                
                 <RowDefinition Height="Auto"/>

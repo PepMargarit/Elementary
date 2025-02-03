@@ -15,12 +15,28 @@
             <ColumnDefinition Width="9*"/>
         </Grid.ColumnDefinitions>
 
-
         <!-- Panel de Información -->
         <StackPanel Grid.Column="1" Margin="1,1,1,1">
-            <Button Content="Modo Aprendizaje" Margin="5" Click="LearningMode_Click"/>
-            <Button Content="Iniciar Quiz" Margin="5" Click="StartQuiz_Click"/>
+            <!-- Botones de Idioma -->
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Button x:Name="english" Width="65" Height="40" Margin="10" ToolTip="English" Click="SetEnglishLanguage_Click" Background="{Binding ElementName=image, Mode=OneWay}">
+                    <Image x:Name="image" Source="/Assets/Flags/english.png" Stretch="Uniform"/>
+                </Button>
+                <Button Width="55" Height="40" Margin="10" ToolTip="Español" Click="SetSpanishLanguage_Click">
+                    <Image x:Name="spanish" Source="/Assets/Flags/spanish.png" Stretch="Uniform"/>
+                </Button>
+            </StackPanel>
+
+            <!-- Botones de acción -->
+            <!--<Button Content="{Binding LearningModeText}" Margin="10" Click="LearningMode_Click"/>
+            <Button Content="{Binding StartQuizText}" Margin="10" Click="StartQuiz_Click"/>-->
+
             <StackPanel>
+                <TextBlock Text="{Binding Leyenda}" 
+                HorizontalAlignment="Center" 
+                FontSize="16" 
+                FontWeight="Bold" 
+                Margin="0,0,0,10"/>
                 <ItemsControl ItemsSource="{Binding CategoryColors}" Margin="0,10,0,0">
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
@@ -32,12 +48,15 @@
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
                 <TextBlock Name="ElementInfoTextBlock" FontSize="12" TextWrapping="Wrap" Margin="5,50,5,5"/>
-            </StackPanel>           
+            </StackPanel>
         </StackPanel>
+
+        <!-- Tabla periódica -->
         <Grid Name="PeriodicTableGridContainer" Grid.Column="0">
             <Grid Name="PeriodicTableGrid" Margin="1,1,1,1"/>
-            <Label x:Name="lbInfo" Content="Click para Info" HorizontalAlignment="Left" Margin="461,137,0,0" VerticalAlignment="Top" Height="39" Width="156" FontSize="22" 
-                   Background="White" Foreground="Black"/>
+            <Label x:Name="lbInfo" Content="{Binding ClickInfoText}" HorizontalAlignment="Left" Margin="300,137,0,0" VerticalAlignment="Top" Height="39" Width="300" FontSize="22" 
+       Background="White" Foreground="Black"/>
+
         </Grid>
     </Grid>
 </Window>

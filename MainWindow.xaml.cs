@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
+using System.Runtime.CompilerServices;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -12,30 +14,152 @@ namespace Elementary
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : Window, INotifyPropertyChanged
     {
         private List<Element> elements;
-        public IEnumerable<KeyValuePair<string, SolidColorBrush>> CategoryColors { get; }
+        private string _learningModeText;
+        private string _startQuizText;
+        private string _clickInfoText;
+        private bool _isEnglish=false;
+        private Element element = null;
+
+        private IEnumerable<KeyValuePair<string, SolidColorBrush>> _categoryColors;
+        public IEnumerable<KeyValuePair<string, SolidColorBrush>> CategoryColors
+        {
+            get { return _categoryColors; }
+            set
+            {
+                _categoryColors = value;
+                OnPropertyChanged(); // Notificar a la UI que cambió
+            }
+        }
+
+        public bool isEnglish
+        {
+            get { return _isEnglish; }
+            set { _isEnglish = value; }
+        }
+        public string LearningModeText
+        {
+            get => _learningModeText;
+            set { _learningModeText = value; OnPropertyChanged(); }
+        }
+
+        public string StartQuizText
+        {
+            get => _startQuizText;
+            set { _startQuizText = value; OnPropertyChanged(); }
+        }
 
         public MainWindow()
         {
             InitializeComponent();
-            CategoryColors = CategoryToColorConverter.GetCategoryColors();
+            // CategoryColors = CategoryToColorConverter.GetCategoryColors();
             DataContext = this;
-            LoadElements();
-            DisplayElements();
+            CategoryToColorConverter.LoadColorsFromJson("Data/colors_es.json");
+            CategoryColors = CategoryToColorConverter.GetCategoryColors();
+            SetSpanishText();
+            
         }
 
-        private void LoadElements()
+        public event PropertyChangedEventHandler PropertyChanged;
+        protected void OnPropertyChanged([CallerMemberName] string name = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        }
+
+        private void SetSpanishText()
+        {
+            LearningModeText = "Modo Aprendizaje";
+            StartQuizText = "Iniciar Quiz";
+            ClickInfoText = "Clica en el elemento para información";
+            Leyenda = "Leyenda";
+            isEnglish = false;
+            CategoryToColorConverter.LoadColorsFromJson("Data/colors_es.json");
+            CategoryColors = CategoryToColorConverter.GetCategoryColors();
+            OnPropertyChanged(nameof(CategoryColors)); 
+            LoadElements(isEnglish);
+            DisplayElements();
+            if (element!=null)
+            {
+                ElementInfoTextBlock.Text = "";
+            }
+        }
+
+        private void SetEnglishText()
+        {
+            LearningModeText = "Learning Mode";
+            StartQuizText = "Start Quiz";
+            ClickInfoText = "Click on element for Info";
+            Leyenda = "Legend";
+            isEnglish = true;
+            CategoryToColorConverter.LoadColorsFromJson("Data/colors_en.json");
+            CategoryColors = CategoryToColorConverter.GetCategoryColors();
+            OnPropertyChanged(nameof(CategoryColors)); 
+            LoadElements(isEnglish);
+            DisplayElements();
+            if (element != null)
+            {
+                ElementInfoTextBlock.Text = "";
+            }
+        }
+
+        private void SetEnglishLanguage_Click(object sender, RoutedEventArgs e)
+        {
+            SetEnglishText();
+        }
+
+        private void SetSpanishLanguage_Click(object sender, RoutedEventArgs e)
+        {
+            SetSpanishText();
+        }
+
+        public string ClickInfoText
+        {
+            get => _clickInfoText;
+            set { _clickInfoText = value; OnPropertyChanged(); }
+        }
+
+        public string Leyenda
+        {
+            get => _clickInfoText;
+            set { _clickInfoText = value; OnPropertyChanged(); }
+        }
+
+        public string Categoria
+        {
+            get => _clickInfoText;
+            set { _clickInfoText = value; OnPropertyChanged(); }
+        }
+
+        private void LoadElements(bool languageCode)
         {
             string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string jsonFilePath = Path.Combine(baseDirectory, "Data", "elements.json");
-
-            if (File.Exists(jsonFilePath))
+            string commonPath = Path.Combine(baseDirectory, "Data", "elements.json");
+            string languagePath;
+            if (languageCode)
             {
-                string json = File.ReadAllText(jsonFilePath);
-                elements = JsonConvert.DeserializeObject<List<Element>>(json);
+                languagePath = Path.Combine(baseDirectory, "Data","elements_en.json");
             }
+            else
+            {
+                languagePath = Path.Combine(baseDirectory, "Data", "elements_es.json");
+            }
+
+            if (File.Exists(languagePath) && File.Exists(commonPath)) 
+            {
+
+                elements = JsonConvert.DeserializeObject<List<Element>>(File.ReadAllText(commonPath));
+                var languageData = JsonConvert.DeserializeObject<List<ElementTranslation>>(File.ReadAllText(languagePath));
+                for (int i = 0; i < elements.Count; i++)
+                {
+                    elements[i].Name = languageData[i].Name;                    
+                    
+                    elements[i].Category = languageData[i].Category;
+                    elements[i].CategoryColor = CategoryToColorConverter.GetBrushForCategory(elements[i].Category);
+                }
+            }           
+
             else
             {
                 MessageBox.Show("El archivo de elementos no se encuentra.");
@@ -97,19 +221,35 @@ namespace Elementary
         private void ElementControl_Click(object sender, System.Windows.Input.MouseButtonEventArgs e)
         {
             ElementControl clickedControl = sender as ElementControl;
-            Element element = clickedControl.DataContext as Element;
+            element = clickedControl.DataContext as Element;
             DisplayElementInfo(element);
         }
 
         private void DisplayElementInfo(Element element)
         {
-            ElementInfoTextBlock.Text = $"Número Atómico: {element.AtomicNumber}\n" +
+            if (isEnglish)
+            {
+               ElementInfoTextBlock.Text = $"Atomic Number: {element.AtomicNumber}\n" +
+                            $"Symbol: {element.Symbol}\n" +
+                            $"Name: {element.Name}\n" +
+                            $"Atomic Weight: {element.AtomicWeight}\n" +
+                            $"Ionization Energy: {element.IonicEnergy}\n" +
+                            $"Category: {element.Category}\n" +
+                            $"Melting Point: {element.MeltingPoint} °C";
+
+
+            }
+            else
+            {
+                ElementInfoTextBlock.Text = $"Número Atómico: {element.AtomicNumber}\n" +
                                         $"Símbolo: {element.Symbol}\n" +
                                         $"Nombre: {element.Name}\n" +
                                         $"Peso Atómico: {element.AtomicWeight}\n" +
                                         $"Energia Ionización: {element.IonicEnergy}\n" +
                                         $"Categoría: {element.Category}\n" +
                                         $"Punto de Fusión: {element.MeltingPoint} °C";
+            }
+            
         }
 
         private void LearningMode_Click(object sender, RoutedEventArgs e)

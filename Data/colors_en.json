@@ -1,0 +1,12 @@
+﻿{
+  "Nonmetal": "#7B68EE",
+  "Alkali Metal": "#FFBD82",
+  "Alkaline Earth Metal": "#F5DEB3",
+  "Transition Metal": "#FAF783",
+  "Lanthanide": "#ADFF2F",
+  "Actinide": "#98FB98",
+  "Post-transition Metal": "#FFD700",
+  "Metalloid": "#90EE90",
+  "Noble Gas": "#ADD8E6",
+  "Halogen": "#EE82EE"
+}

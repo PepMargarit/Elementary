@@ -1,0 +1,474 @@
+﻿[
+  {
+    "Name": "Hidrógeno",
+    "Category": "No metal"
+  },
+  {
+    "Name": "Helio",
+    "Category": "Gas noble"
+  },
+  {
+    "Name": "Litio",
+    "Category": "Metal alcalino"
+  },
+  {
+    "Name": "Berilio",
+    "Category": "Metal alcalinotérreo"
+  },
+  {
+    "Name": "Boro",
+    "Category": "Metaloide"
+  },
+  {
+    "Name": "Carbono",
+    "Category": "No metal"
+  },
+  {
+    "Name": "Nitrógeno",
+    "Category": "No metal"
+  },
+  {
+    "Name": "Oxígeno",
+    "Category": "No metal"
+  },
+  {
+    "Name": "Flúor",
+    "Category": "Halógeno"
+  },
+  {
+    "Name": "Neón",
+    "Category": "Gas noble"
+  },
+  {
+    "Name": "Sodio",
+    "Category": "Metal alcalino"
+  },
+  {
+    "Name": "Magnesio",
+    "Category": "Metal alcalinotérreo"
+  },
+  {
+    "Name": "Aluminio",
+    "Category": "Metal post-transicional"
+  },
+  {
+    "Name": "Silicio",
+    "Category": "Metaloide"
+  },
+  {
+    "Name": "Fósforo",
+    "Category": "No metal"
+  },
+  {
+    "Name": "Azufre",
+    "Category": "No metal"
+  },
+  {
+    "Name": "Cloro",
+    "Category": "Halógeno"
+  },
+  {
+    "Name": "Argón",
+    "Category": "Gas noble"
+  },
+  {
+    "Name": "Potasio",
+    "Category": "Metal alcalino"
+  },
+  {
+    "Name": "Calcio",
+    "Category": "Metal alcalinotérreo"
+  },
+  {
+    "Name": "Escandio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Titanio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Vanadio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Cromo",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Manganeso",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Hierro",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Cobalto",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Níquel",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Cobre",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Zinc",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Galio",
+    "Category": "Metal post-transicional"
+  },
+  {
+    "Name": "Germanio",
+    "Category": "Metaloide"
+  },
+  {
+    "Name": "Arsénico",
+    "Category": "Metaloide"
+  },
+  {
+    "Name": "Selenio",
+    "Category": "No metal"
+  },
+  {
+    "Name": "Bromo",
+    "Category": "Halógeno"
+  },
+  {
+    "Name": "Kriptón",
+    "Category": "Gas noble"
+  },
+  {
+    "Name": "Rubidio",
+    "Category": "Metal alcalino"
+  },
+  {
+    "Name": "Estroncio",
+    "Category": "Metal alcalinotérreo"
+  },
+  {
+    "Name": "Itrio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Circonio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Niobio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Molibdeno",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Tecnecio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Rutenio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Rodio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Paladio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Plata",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Cadmio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Indio",
+    "Category": "Metal post-transicional"
+  },
+  {
+    "Name": "Estaño",
+    "Category": "Metal post-transicional"
+  },
+  {
+    "Name": "Antimonio",
+    "Category": "Metaloide"
+  },
+  {
+    "Name": "Telurio",
+    "Category": "Metaloide"
+  },
+  {
+    "Name": "Yodo",
+    "Category": "Halógeno"
+  },
+  {
+    "Name": "Xenón",
+    "Category": "Gas noble"
+  },
+  {
+    "Name": "Cesio",
+    "Category": "Metal alcalino"
+  },
+  {
+    "Name": "Bario",
+    "Category": "Metal alcalinotérreo"
+  },
+  {
+    "Name": "Lutecio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Hafnio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Tantalio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Wolframio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Renio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Osmio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Iridio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Platino",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Oro",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Mercurio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Talio",
+    "Category": "Metal post-transicional"
+  },
+  {
+    "Name": "Plomo",
+    "Category": "Metal post-transicional"
+  },
+  {
+    "Name": "Bismuto",
+    "Category": "Metal post-transicional"
+  },
+  {
+    "Name": "Polonio",
+    "Category": "Metaloide"
+  },
+  {
+    "Name": "Astato",
+    "Category": "Halógeno"
+  },
+  {
+    "Name": "Radón",
+    "Category": "Gas noble"
+  },
+  {
+    "Name": "Francio",
+    "Category": "Metal alcalino"
+  },
+  {
+    "Name": "Radio",
+    "Category": "Metal alcalinotérreo"
+  },
+  {
+    "Name": "Laurencio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Rutherfordio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Dubnio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Seaborgio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Bohrio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Hassio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Meitnerio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Darmstadtio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Roentgenio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Copernicio",
+    "Category": "Metal de transición"
+  },
+  {
+    "Name": "Nihonio",
+    "Category": "Metal post-transicional"
+  },
+  {
+    "Name": "Flerovio",
+    "Category": "Metal post-transicional"
+  },
+  {
+    "Name": "Moscovio",
+    "Category": "Metal post-transicional"
+  },
+  {
+    "Name": "Livermorio",
+    "Category": "Metal post-transicional"
+  },
+  {
+    "Name": "Tenesino",
+    "Category": "Halógeno"
+  },
+  {
+    "Name": "Oganesón",
+    "Category": "Gas noble"
+  },
+  {
+    "Name": "Lantano",
+    "Category": "Lantánido"
+  },
+  {
+    "Name": "Cerio",
+    "Category": "Lantánido"
+  },
+  {
+    "Name": "Praseodimio",
+    "Category": "Lantánido"
+  },
+  {
+    "Name": "Neodimio",
+    "Category": "Lantánido"
+  },
+  {
+    "Name": "Prometio",
+    "Category": "Lantánido"
+  },
+  {
+    "Name": "Samario",
+    "Category": "Lantánido"
+  },
+  {
+    "Name": "Europio",
+    "Category": "Lantánido"
+  },
+  {
+    "Name": "Gadolinio",
+    "Category": "Lantánido"
+  },
+  {
+    "Name": "Terbio",
+    "Category": "Lantánido"
+  },
+  {
+    "Name": "Disprosio",
+    "Category": "Lantánido"
+  },
+  {
+    "Name": "Holmio",
+    "Category": "Lantánido"
+  },
+  {
+    "Name": "Erbio",
+    "Category": "Lantánido"
+  },
+  {
+    "Name": "Tulio",
+    "Category": "Lantánido"
+  },
+  {
+    "Name": "Iterbio",
+    "Category": "Lantánido"
+  },
+  {
+    "Name": "Actinio",
+    "Category": "Actínido"
+  },
+  {
+    "Name": "Torio",
+    "Category": "Actínido"
+  },
+  {
+    "Name": "Protactinio",
+    "Category": "Actínido"
+  },
+  {
+    "Name": "Uranio",
+    "Category": "Actínido"
+  },
+  {
+    "Name": "Neptunio",
+    "Category": "Actínido"
+  },
+  {
+    "Name": "Plutonio",
+    "Category": "Actínido"
+  },
+  {
+    "Name": "Americio",
+    "Category": "Actínido"
+  },
+  {
+    "Name": "Curio",
+    "Category": "Actínido"
+  },
+  {
+    "Name": "Berkelio",
+    "Category": "Actínido"
+  },
+  {
+    "Name": "Californio",
+    "Category": "Actínido"
+  },
+  {
+    "Name": "Einsteinio",
+    "Category": "Actínido"
+  },
+  {
+    "Name": "Fermio",
+    "Category": "Actínido"
+  },
+  {
+    "Name": "Mendelevio",
+    "Category": "Actínido"
+  },
+  {
+    "Name": "Nobelio",
+    "Category": "Actínido"
+  }
+]

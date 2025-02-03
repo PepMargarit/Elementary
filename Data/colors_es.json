@@ -1,0 +1,12 @@
+﻿{
+  "No metal": "#7B68EE",
+  "Metal alcalino": "#FFBD82",
+  "Metal alcalinotérreo": "#F5DEB3",
+  "Metal de transición": "#FAF783",
+  "Lantánido": "#ADFF2F",
+  "Actínido": "#98FB98",
+  "Metal post-transicional": "#FFD700",
+  "Metaloide": "#90EE90",
+  "Gas noble": "#ADD8E6",
+  "Halógeno": "#EE82EE"
+}

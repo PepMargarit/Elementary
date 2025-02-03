@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using Newtonsoft.Json;
 using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media;
@@ -8,26 +10,27 @@ namespace Elementary
 {
     public class CategoryToColorConverter : IValueConverter
     {
-        private static readonly Dictionary<string, SolidColorBrush> CategoryColors = new Dictionary<string, SolidColorBrush>
+        private static Dictionary<string, SolidColorBrush> _currentColors = new Dictionary<string, SolidColorBrush>();
+
+        public static void LoadColorsFromJson(string filePath)
         {
-            { "Nonmetal", Brushes.MediumSlateBlue},
-            { "Alkali Metal", Brushes.PeachPuff },
-            { "Alkaline Earth Metal", Brushes.Wheat },
-            { "Transition Metal", Brushes.Khaki},
-            { "Lanthanide", Brushes.GreenYellow},
-            { "Actinide", Brushes.PaleGreen},
-            
-            { "Post-transition Metal", Brushes.Gold },
-            { "Metalloid", Brushes.LightGreen },            
-            { "Noble Gas", Brushes.LightBlue },
-            { "Halogen", Brushes.Violet },
-            // Agrega más categorías según sea necesario
-        };
+            if (File.Exists(filePath))
+            {
+                string json = File.ReadAllText(filePath);
+                var colors = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
+                _currentColors = new Dictionary<string, SolidColorBrush>();
+
+                foreach (var color in colors)
+                {
+                    _currentColors[color.Key] = (SolidColorBrush)(new BrushConverter().ConvertFromString(color.Value));
+                }
+            }
+        }
 
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             string category = value as string;
-            return CategoryColors.TryGetValue(category, out var brush) ? brush : Brushes.White;
+            return _currentColors.TryGetValue(category, out var brush) ? brush : Brushes.White;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
@@ -37,7 +40,12 @@ namespace Elementary
 
         public static IEnumerable<KeyValuePair<string, SolidColorBrush>> GetCategoryColors()
         {
-            return CategoryColors;
+            return _currentColors;
+        }
+
+        public static SolidColorBrush GetBrushForCategory(string category)
+        {
+            return _currentColors.TryGetValue(category, out var brush) ? brush : Brushes.Transparent;
         }
     }
 }
