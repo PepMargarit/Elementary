@@ -17,12 +17,24 @@
 
         <!-- Panel de Información -->
         <StackPanel Grid.Column="1" Margin="1,1,1,1">
+            <Button Content="X"
+            Width="25"
+            Height="25"
+            FontSize="16"
+            FontWeight="Bold"
+            Foreground="Red"
+            Background="White"
+            BorderThickness="0"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Top"
+            Margin="0"
+            Click="CloseApp_Click"/>
             <!-- Botones de Idioma -->
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-                <Button x:Name="english" Width="65" Height="40" Margin="10" ToolTip="English" Click="SetEnglishLanguage_Click" Background="{Binding ElementName=image, Mode=OneWay}">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0">
+                <Button x:Name="english" Width="65" Height="40" Margin="5" ToolTip="English" Click="SetEnglishLanguage_Click" Background="{Binding ElementName=image, Mode=OneWay}">
                     <Image x:Name="image" Source="/Assets/Flags/english.png" Stretch="Uniform"/>
                 </Button>
-                <Button Width="55" Height="40" Margin="10" ToolTip="Español" Click="SetSpanishLanguage_Click">
+                <Button Width="55" Height="40" Margin="5" ToolTip="Español" Click="SetSpanishLanguage_Click">
                     <Image x:Name="spanish" Source="/Assets/Flags/spanish.png" Stretch="Uniform"/>
                 </Button>
             </StackPanel>

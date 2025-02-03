@@ -261,5 +261,10 @@ namespace Elementary
         {
             // Lógica para iniciar el quiz
         }
+
+        private void CloseApp_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }
