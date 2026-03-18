@@ -1,4 +1,4 @@
-﻿<Window x:Class="Elementary.MainWindow"
+<Window x:Class="Elementary.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -31,11 +31,11 @@
             Click="CloseApp_Click"/>
             <!-- Botones de Idioma -->
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0">
-                <Button x:Name="english" Width="65" Height="40" Margin="5" ToolTip="English" Click="SetEnglishLanguage_Click" Background="{Binding ElementName=image, Mode=OneWay}">
-                    <Image x:Name="image" Source="/Assets/Flags/english.png" Stretch="Uniform"/>
+                <Button x:Name="english" Width="60" Height="40" Margin="5" ToolTip="English" Click="SetEnglishLanguage_Click">
+                    <Image Source="/Assets/Flags/english.png" Stretch="Uniform"/>
                 </Button>
-                <Button Width="55" Height="40" Margin="5" ToolTip="Español" Click="SetSpanishLanguage_Click">
-                    <Image x:Name="spanish" Source="/Assets/Flags/spanish.png" Stretch="Uniform"/>
+                <Button x:Name="spanishButton" Width="60" Height="40" Margin="5" ToolTip="Español" Click="SetSpanishLanguage_Click">
+                    <Image Source="/Assets/Flags/spanish.png" Stretch="Uniform"/>
                 </Button>
             </StackPanel>
 

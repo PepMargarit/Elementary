@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -9,8 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\Flags\english.png" />
-    <None Remove="Assets\Flags\spanish.png" />
     <None Remove="Data\colors_en.json" />
     <None Remove="Data\colors_es.json" />
     <None Remove="Data\elements.json" />
@@ -45,12 +43,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Assets\Flags\english.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Flags\spanish.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
+    <Resource Include="Assets\Flags\english.png" />
+    <Resource Include="Assets\Flags\spanish.png" />
   </ItemGroup>
 
   <ItemGroup>
